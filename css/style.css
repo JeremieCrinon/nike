@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*On s'occupe du header*/
+
+header{
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .logo{
+    width: 20%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+header .logo svg{
+    width: 100%;  
+}
+
+header .social_medias{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+header .social_medias div{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header .social_medias div *{
+    fill:#fff;
+}
+
+header .menu{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+header .st0{
+    fill:#fff;
+}
+
+header .social_medias div div{
+    width: min-content;
+}
+
+header .social_medias div div:hover .logos{
+    fill: yellow;
+}
+
+/*On s'occupe du header*/
+
+/*On s'occupe de l'image*/
+.wall{
+    background-image: url(../img/wall.jpg);
+    background-size: 100%;
+    background-position: 30%;
+    height: 300px;
+}
+/*On s'occupe de l'image*/
+
+/*On s'occupe du bandeau qui dit qu'il y à des promos*/
+.discount{
+    background-color: yellow;
+}
+
+.discount p{
+    font-family: 'Roboto', sans-serif;  
+    font-weight: 500;
+    font-size: 24px;  
+    text-align: center;
+    padding: 10px 0;
+}
+/*On s'occupe du bandeau qui dit qu'il y à des promos*/
+
+/*On s'occupe de la partie avec les chaussures*/
+
+.shoes{
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 100px auto 0;
+    overflow: hidden;
+}
+
+.shoes article{
+    width: calc(100% / 3);
+    position: relative;
+}
+
+.shoes article img{
+    width: 100%;
+    filter: grayscale(1);
+    transition: all 0.5s;
+    transform: scale(0.9);
+}
+
+.shoes article .price{
+    background-color: yellow;
+    width: 20%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    transform: rotate(-10deg);
+    box-shadow: 6px 6px black;
+    position: absolute;
+    top: 0px;
+    left: 15px;
+    z-index: 2;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;  
+    font-weight: 500;
+}
+
+.shoes article .name{
+    background-color: yellow;
+    width: 30%;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(10deg);
+    box-shadow: 6px 6px black;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;  
+    font-weight: 500;
+    align-self: center;
+    position: absolute;
+    left: 30%;
+    top: 10px;
+    z-index: 2;
+}
+
+.shoes article:hover img{
+    filter: none;
+    transform: scale(1);
+    
+}
+
+/*On s'occupe de la partie avec les chaussures*/
+
+/*On s'occupe du footer*/
+
+footer{
+    display: flex;
+}
+
+footer .logo{
+    width: 40%;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+}
+
+footer .logo svg{
+    width: 50%;
+    margin: 20px 0;
+}
+
+footer .slogan{
+    width: 60%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .slogan p{
+    color: yellow;
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+
+/*On s'occupe du footer*/

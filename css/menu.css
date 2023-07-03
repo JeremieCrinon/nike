@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+.menu {
+	margin: 50px 0;
+}
+
+.menu ul {
+	padding: 0;
+    margin: 0;
+	list-style: none;
+	position: relative;
+	}
+	
+.menu ul li {
+	display:inline-block;
+}
+
+.menu a {
+	display:block;
+	padding:0 10px;	
+	color:#FFF;
+	font-size:15px;
+	line-height: 60px;
+	text-decoration:none;
+    font-family: 'Roboto', sans-serif;
+}
+.menu a:hover { 
+	background-color: #000000; 
+}
+
+/* Hide Dropdowns by Default */
+.menu ul ul {
+	display: none;
+	position: absolute; 
+	top: 60px; /* the height of the main nav */
+    background-color: #fff;
+    border-radius: 5px;
+    width: 40%;
+}
+
+.menu ul ul a{
+    line-height: 40px;
+    color: #000000;
+}
+	
+/* Display Dropdowns on Hover */
+.menu ul li:hover > ul {
+	display:inherit;
+}
+	
+/* Fisrt Tier Dropdown */
+.menu ul ul li {
+	
+	float:none;
+	display:list-item;
+	position: relative;
+}
+
+/* Second, Third and more Tiers	*/
+.menu ul ul ul li {
+	position: relative;
+	top:-60px; 
+	left:170px;
+}
+
+.menu .actual a{
+    display: block;
+    color: #000000;
+    background-color: #FFF;
+    line-height: 30px;
+    border-radius: 5px;
+}
+
+.menu ul ul li:hover a{
+	color: #fff;
+}
+
+	
+/* Change this in order to change the Dropdown symbol */
+.menu li > a:after { content:  ' ▼'; font-size: 7px}
+.menu li > a:only-child:after { content: ''; }

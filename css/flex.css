@@ -1,0 +1,209 @@
+@media screen and (max-width: 993px){
+    header{
+        flex-direction: column-reverse;
+    }
+
+    header .menu{
+        width: 100%;
+    }
+
+    header .social_medias{
+        width: 100%;
+        background-color: yellow;
+        align-items: center;
+    }
+
+    header .social_medias div{
+        width: 70%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    header .social_medias div *{
+        fill: #000;
+        width: 5%;   
+    }
+
+    header .menu{
+        width: 100%;
+    }
+
+    header .menu div{
+        height: 100px;
+        width: 95%;
+    }
+
+    header .logo{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        width: 25%;
+    }
+
+    header .logo svg{        
+        .st0{fill:yellow;}
+    }
+
+    header .menu{
+        justify-content: flex-start;
+        margin-bottom: 0;
+    }
+
+    header .menu a{
+        font-size: 15px;
+    }
+
+    .menu li > a:after {font-size: 10px}
+
+    header .menu ul li{
+        display: block;    
+    }
+
+    header .menu ul ul{
+        margin-left: 100%;
+        margin-top: -17px;
+        background-color: yellow;
+        position: static;
+        width: 100%;
+        margin: 0;
+    }
+
+    header .menu ul .last{
+        margin-bottom: 20px;    
+    }
+
+    header .menu ul ul li{
+        height: 60px;
+        
+    }
+
+    header .menu ul ul a{
+        color: #000;
+    }
+
+    header .menu ul{
+        width: 97%;
+        margin-left: 3%;
+    }
+
+    header .menu .actual a{
+        width: 100%;
+        background-color: yellow;
+    }
+    
+    .wall{
+        display: none;
+    }
+
+    .discount p{
+        padding: 20px 0;
+    }
+
+    .shoes article{
+        width: 50%;
+    }
+
+    .shoes article .price, .shoes article .name{
+        font-size: 12px;
+    }
+
+    footer{
+        flex-direction: column;
+    }
+
+    footer .logo{
+        width: 100%;
+    }
+
+    footer .logo svg{
+        width: 15%;
+        padding: 15px 0;
+    }
+
+    footer .slogan{
+        width: 100%;
+    }
+
+    footer .slogan p{
+        padding: 50px 0;
+    }
+
+    header .social_medias div div{
+        width: 20%;
+    }
+
+    header .social_medias div div svg{
+        width: 100%;    
+    }
+
+    header .social_medias div div:hover .logos{
+        fill: gray;
+    }
+   
+}
+
+@media screen and (max-width: 1400px){
+    .shoes article .price, .shoes article .name{
+        font-size: 16px;
+    }    
+}
+
+@media screen and (max-width: 1050px){
+    .shoes article .price, .shoes article .name{
+        font-size: 14px;
+    }    
+}
+
+
+@media screen and (max-width: 768px){
+    .shoes article{
+        width: 100%;
+    }    
+
+    .shoes article .price, .shoes article .name{
+        font-size: 25px;
+    }
+
+    .shoes article .name{
+        width: 25%;
+        height: 50px;
+        top: 60px;
+        left: 30%;
+    }
+
+    .shoes article .price{
+        width: 15%;
+        top: 35px;
+        left: 8%;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .shoes article .price, .shoes article .name{
+        font-size: 20px;
+    }   
+}
+
+@media screen and (max-width: 600px) {
+    header .social_medias div *{
+        width: 8%;   
+    }    
+
+    header .logo{
+        width: 30%;
+        padding-top: 40px;
+        padding-bottom: 0px;
+    }
+
+    .shoes article .price, .shoes article .name{
+        font-size: 16px;
+    }
+
+
+}
+
+@media screen and (max-width: 450px){
+    .shoes article .price, .shoes article .name{
+        font-size: 15px;
+    }        
+}
+
